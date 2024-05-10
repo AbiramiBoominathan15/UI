@@ -3,11 +3,50 @@
     <head>
         <style>
             body {
-              background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*mB4hI2RCSEeWe7i3YHm33g.jpeg');
+              background-color:rgb(197, 159, 197);
                background-repeat: no-repeat;
               background-attachment: fixed;
               background-size: cover;
+              text-align: left;
             }
+            input[type=phone1]{
+            
+              padding:5px;
+              background: white;
+            }
+ input[type=text], input[type=password],input[type=Email],input[type=date]input[type=phone]{
+  width: 20%;
+  padding: 8px;
+  margin: 5px 0 19px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+  justify-content: center;
+ }
+select{
+  padding: 8px;
+  margin: 5px 0 19px 0;
+  display: inline-block;
+  border: black;
+  background: white;
+}
+button{
+  padding: 10px;
+  margin: 5px 0 19px 0; 
+  display: inline-block;
+  border: black;
+  background: green;
+
+
+}
+input[type=text]:focus, input[type=password]:focus,input[type=Email]:focus,input[type=date]:focus,input[type=phone]:focus {
+  background-color: #ddd;
+  outline: black;
+}
+/* div{
+  position: relative;
+  left:500px;
+} */
             </style>
         
         <title>
@@ -17,47 +56,57 @@
     <body>
         <h1>
             <center>
-                REGISTRATION FORM<b></b><br></h1>
-              <h4>LIBRARY MANAGEMENT</h4>
+                LIBRARY MANAGEMENT<b></b></h1><br>
+                <center>
+              <h2>Register Here</h2>
+            <h4> Please fill  in the details to create account with us</h4></center>
             </center>
-            <form action="library.html" method="get">
-           <div><label for="name"><b>Username</b></label>
+            <form action="library.html" method="get" style="width: 40%; margin: 0 auto;">
+              <fieldset>
+          <div >
+           <label for="name"><b>Username</b></label>
             <input type="text" placeholder="eg:Abirami" name="Username" required><br><br>
-           </div>
-           <div> <label for="Password"><b>Password</b></label>
+           
+            <label for="Password"><b>Password</b></label>
             <input type="password" placeholder="eg:abirami@15" name="Password" minlength="7"  maxlength="10"><br> <br>   
-           </div>
-           <div> <label for="Mobilenumber"><b>Mobilenumber</b></label>
-            <input type="Mobilenumber" placeholder="eg:8270929254"  name="mobilenumber" size="10" required><br><br>    
-           </div>
-           <div><label for="EmailId"><b>EmailId</b></label>
-            <input type="Email Id" id="Email Id" placeholder="eg:abirami15@gmail.com" required />  <br>  <br>
-           </div>
-            <div>
-                <div> <label for="catagory"><b>Catagory</b></label><br>
+            <label for="Date-Of-Birth"><b>Date-Of-Birth:</b></label>
+            <input type="date" id="Date-Of-Birth" name="trip-Date-Of-Birth"/><br><br>    
+            
+            <label for="Gender"><b>Gender:</b>
+             </label>
+            <input type="radio" name="Gender" value="M"required> Male 
+            <input type="radio" name="Gender" value="F"required> Female <br><br>   
+            <label for="Email"><b>Email</b></label>
+            <input type="Email" id="Email" placeholder="eg:abirami15@gmail.com" required />  <br>  <br>
+            <label> <b>
+              Phone :</b>
+              </label>
+              <input type="phone1" name="country code"  value="+91" size="2"/>
+              <input type="phone" placeholder="PhoneNumber" name="Phone" size="10"/> <br> <br>    
+               <label for="catagory"><b>Catagory</b></label><br>
                 <input type="radio" id="SchoolStudent" name="drone" value="SchoolStudent" checked />
-                <label for="SchoolStudent">SchoolStudent</label><br>
+                <label for="SchoolStudent">SchoolStudent</label>
                 <input type="radio" id="CollegeStudent" name="drone" value="CollegeStudent" checked />
-                <label for="CollegeStudent">CollegeStudent</label><br>
+                <label for="CollegeStudent">CollegeStudent</label>
                 <input type="radio" id="Others" name="drone" value="Others" checked />
-                <label for="Others">Others</label><br>
-              </div>
-              <div>
-              <label for="Date-Of-Birth">Date-Of-Birth:</label>
-              <input type="date" id="Date-Of-Birth" name="trip-Date-Of-Birth" value="2018-07-22" min="2018-01-01" max="2018-12-31" /><br><br>
-              </div> 
-              <div>    
-                <label for="Gender">Gender:</label><br>
-                <input type="radio" name="Gender" value="M"required> Male <br> 
-                <input type="radio" name="Gender" value="F"required> Female <br><br>
-               </div>
-               <div>
-                <button type="submit">Submit</button>
-                <button type="submit" formaction="library.html"></button>
-               </form>
-               </label>
-                </div>
-       
-</div>
+                <label for="Others">Others</label><br><br>
+                <label> <b>
+                  Book:</b>
+                  </label> 
+                  <select>
+                  <option value="Select">Select</option>
+                  <option value="Fantasy">Fantasy</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Fiction">Fiction</option>
+                  <option value=" Historical Fiction">Historical Fiction</option>
+                  <option value="Thriller">Thriller</option>
+                  </select><br><br> 
+                  <center><button type="submit" formaction="library.html">Submit</button>
+                  </center>          
+                             </div>
+            </fieldset>    
+
+              </form>   
 </body>
 </html>
