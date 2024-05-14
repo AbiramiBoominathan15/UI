@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="FirstPageStyle.css">
     <style>
-img:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
+      /* .bottom{
+        /* position:fixed; */
+        /* bottom: 400px;
+        right: 1000px; 
+        margin-top: 50%;
 
-nav {
-  list-style-type: none;
-  text-align:left;
-  margin: 0;
-  padding: 0;
-}
-li {
-  display: inline;
-}
-.button-li:hover{
-  color: black;
-  background-color: rgb(245, 210, 179);
-}
-.head-section {
-    background-color: rgb(245, 159, 173);
-    text-align: center;
-}
-.logoo{
-  display: inline-block;
-}
-.background{
-  display: inline-block;
-  vertical-align: top;
-  padding: 40px 0px;
-}
-.topright input[type= text]
-{
-  position:absolute;
-  border-top-right-radius:8px;
-  right: 16px;
-  padding: 6px;
-  font-size: 17px;
-  border: 1px solid grey;
-  width:15%;
-  background-color: whitesmoke;
-}
-.input{
-  position: absolute;
-  right: 0;
-}
-
+        text-align: center; */
+      /* } */ 
 </style>
-  <title>LIBRARY MANAGEMENT
+  <title>BOOK SHOP
   </title> 
 </head>
 <body>
   <div class="head-section">
-    <img class="logoo" src="C:\Users\Abir3567\Downloads\360_F_478742224_movr8lXS2eyJggCiLYG2RPA4Sp6Qru88-removebg-preview.png" width="15%" height=15% >
-<h1 class="background"><center> LIBRARY MANAGEMENT</center>
+    <img class="logoo" src="C:\Users\Abir3567\Downloads\book-shop-icon-library-store-or-bookstore-symbol-vector-47565519-removebg-preview.png" width="15%"  height=15% >
+<h1 class="background"><center> BOOK SHOP</center>
   </h1>
-  <form action="libraryRegister.html" method="get">
+  <div class="colorset" >
+   <form action="libraryRegister.html" method="get"> 
     <nav>
-          <li><button class="button-li" type="HOME" formaction="Home page.html">HOME</button>
-        </li>
-        <li><button class="button-li" type="REGISTRATION" formaction="Register.html">REGISTRATION</button>
-        </li>
-        <li><button class="button-li" type="LOGIN" formaction="library.html">LOGIN</button>
-        </li>
-        <li><button class="button-li" type="ADMIN" formaction="">ABOUT</button>
-        </li>
-        <li><button class="button-li" type="ABOUT" formaction="">ADMIN</button>
-        </li>
-        <li><button class="button-li" type="CONTACT" formaction="contactpage.html">CONTACT</button>
-        </li>
-        <li><button class="button-li" type="pictures" formaction="">PICTURE</button>
-        </li>
+     <div class="space">
+        <!-- <li><button style="color: white;" class="button-li" type="HOME" formaction="Home page.html">HOME</button>
+        </li> -->
+        <a class="remove"  style="color: white;margin-left: 35px;"  href="FirstPage1.html">
+          <img src="C:\Users\Abir3567\Downloads\home-removebg-preview.png" width="3%" height="3%">          HOME</a>
+        <!-- <li><button style="color: white;" class="button-li" type="REGISTRATION" formaction="Register.html">REGISTRATION</button>
+         </li> -->
+         <a class="remove" style="color: white;margin-left: 35px;"  href="Register.html">REGISTRATION</a>
 
+        <!-- <li><button style="color: white;" class="button-li" type="LOGIN" formaction="library.html">LOGIN</button>
+        </li> -->
+        <a  class =" remove" style="color: white;margin-left: 35px;"  href="library.html">LOGIN</a>
+
+        <!-- <li><button style="color: white;" class="button-li" type="ADMIN" formaction="">ABOUT</button>
+        </li> -->
+        <a class="remove" style="color: white;margin-left: 35px;"  href="library.html">ADMIN</a>
+
+        <!-- <li><button style ="color:white"class="button-li" type="ABOUT" formaction="">ADMIN</button>
+        </li> -->
+        <a class = "remove "style="color: white;margin-left: 35px;"  href="Home page.html">ABOUT</a>
+
+        <!-- <li><button style="color: white"class="button-li" type="CONTACT" formaction="contactpage.html">CONTACT</button>
+        </li> -->
+        <a  class = "remove"style="color: white;margin-left: 35px;"  href="contactpage.html">CONTACT</a>
+
+        <!-- <li><button style="color: white;" class="button-li" type="pictures" formaction="">PICTURE</button>
+        </li> -->
+        <a class = " remove"style="color: white;margin-left: 35px;"  href="flex.html">PICTURE</a>
+      
+      </div>
        <li> 
-          <input class="input" type="text" placeholder="Search" name="search2">
+          <input style="color: white;"  class="input" type="text" placeholder="Search" name="search2">
         </li>
        </h1>
     </nav>   
+    </div>
        <!-- <hr class="new1"> -->
-</form>
+<!-- </form> -->
 </div>
-<img src="https://t4.ftcdn.net/jpg/05/58/48/45/360_F_558484537_vyuk2C23spArvlDHWFv8Z9rTqzpMJk3t.jpg" alt="HTML5 Icon" width="1500" height="575"> 
+</div>
+<script>
+  function myFunction() {
+    var txt;
+    if (confirm("Thanks for exploring our shop")) {
+      txt = "Thanks for exploring our shop!";
+    } else {
+      txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
+  </center>
+  
+<img src="https://t4.ftcdn.net/jpg/05/58/48/45/360_F_558484537_vyuk2C23spArvlDHWFv8Z9rTqzpMJk3t.jpg" alt="HTML5 Icon" width="1260px" height="575"> 
+
  <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlehhEHbgGtTmtFBpJEjVMw93HEwRhMEJ6CRkskfLdSiOOFGeMgO1E89P0ui0Dc0wHmPM&usqp=CAU" width="1500 "height="575"> -->
+<div class="footer">
+  <!-- <button  style="color: blue;"    class="bottom" onclick="myFunction()">EXPLORE</button> -->
+  <button style="color:black; background-color: blue;" class="button-li" type="pictures" formaction="flex.html">EXPLORE</button>
+</form>
+  <p ><b>&Copyrights Bookshop</b></p>
+</div>
 </body>
 </html>
